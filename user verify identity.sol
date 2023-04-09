@@ -7,7 +7,7 @@ mapping(address => bool) user_verified;
   mapping(bytes32 => address) to_sign;
  mapping(bytes32 => bool) signed;
   address owner;
-  modifier onlyOwner() {
+  modifier onlyOwner(){
  require(msg.sender == owner);
  _;
  }
@@ -21,10 +21,14 @@ function addUser(address user, bytes32 hashed_verification) public onlyOwner {
  user_verified[user] = false;
  user_codes[user] = hashed_verification;
  }
-  function verify(bytes32 verification_code) public {
+function verify(bytes32 verification_code) public {
  if (user_verified[msg.sender] == false &&
- sha256(verification_code) == user_codes([msg.sender]) 
+ sha256(verification_code) == user_codes[msg.sender]){
  (user_verified[msg.sender] = true,
-  poda 
+ }
+}
+}
+
+
   
 
