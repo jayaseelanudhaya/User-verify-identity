@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"name": "hashed_verification",
+						"type": "bytes32"
+					}
+				],
+				"name": "addUser",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "verification_code",
+						"type": "bytes32"
+					}
+				],
+				"name": "verify",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"user verify identity.sol": "UserExample"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"user verify identity.sol": {
+			"keccak256": "0xe73425f6e6d443223ff5ae326385884d5a76761c29be5de554bb58848a234c31",
+			"urls": [
+				"bzzr://7d238276f576d2e623de52f1c87c1725e279274cd1b666248733c71f5f966d34"
+			]
+		}
+	},
+	"version": 1
+}
