@@ -65,9 +65,9 @@
 	},
 	"sources": {
 		"user verify identity.sol": {
-			"keccak256": "0xe73425f6e6d443223ff5ae326385884d5a76761c29be5de554bb58848a234c31",
+			"keccak256": "0xee252474b2fb11d9914f32fdcb9f3c402d26f75ea67c483b1c05e42d3f1eb058",
 			"urls": [
-				"bzzr://7d238276f576d2e623de52f1c87c1725e279274cd1b666248733c71f5f966d34"
+				"bzzr://6e9ddb61fdd983f587842d50794af543cce247c5c0cb7699bdefac8940f1193a"
 			]
 		}
 	},

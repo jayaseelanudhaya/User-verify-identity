@@ -13,7 +13,7 @@ mapping(address => bool) user_verified;
  }
 
 
- function UserExample() public{
+function UserExample() public{
  owner = msg.sender;
  }
  
@@ -24,7 +24,7 @@ function addUser(address user, bytes32 hashed_verification) public onlyOwner {
 function verify(bytes32 verification_code) public {
  if (user_verified[msg.sender] == false &&
  sha256(verification_code) == user_codes[msg.sender]){
- (user_verified[msg.sender] = true,
+ (user_verified[msg.sender]) = true;
  }
 }
 }
